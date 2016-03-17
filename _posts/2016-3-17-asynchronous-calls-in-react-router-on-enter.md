@@ -38,7 +38,7 @@ To use this function with an async call just invoke it when you are done with th
       }}
     />
     
-   	const checkToken = (callback) =>
+   		const checkToken = (callback) =>
     makeXHR({type: TOKEN_REQUEST})
     .then(response) => {
       if (response === 'TOKEN_DOES_NOT_EXIST' ) {
