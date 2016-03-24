@@ -8,7 +8,7 @@ published: true
 
 Recently in an React/Redux app I am working, needed to do an authentication check when entering a route state. [JWT](https://en.wikipedia.org/wiki/JSON_Web_Token) tokens are being used for authentication, but I needed to do a network call to check the validity of the token instead of just checking the presence for it in local storage. I might write something like this in the route
 
-```javascript
+{% highlight javascript %}
 <Route
  path='edit'
  component={EditComponent}
@@ -16,7 +16,7 @@ Recently in an React/Redux app I am working, needed to do an authentication chec
   checkToken()
  }}
  />
-```
+{% endhighlight %}
 
 Where `checkToken` could be a async network call like
 
